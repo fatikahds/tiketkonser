@@ -1,0 +1,277 @@
+{
+	padding: 0;
+	margin: 0;
+	font-family: garamond;
+	box-sizing: border-box;
+	outline: none; border: none;
+	transition: all .2s linear;
+	list-style: none;
+}
+
+.container{
+	width: 80%;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+.container:after {
+	content:'';
+	display:block;
+	clear: both;
+}
+
+.card-container{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 25px;
+	margin-top:60px;
+}
+.product-preview {
+	position: fixed;
+	top:0; left: 0;
+	min-height: 100wh;
+	width: 100%;
+	background: rgba(0, 0, 0,.8);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.product-preview .preview{
+	display: flex;
+	padding: 1rem;
+	text-align: center;
+	background: #133E87;
+	position: relative;
+	margin: 1rem;
+	width: 25rem;
+}
+
+.product-preview .preview.active{
+	display: inline-block;
+}
+
+.product-preview .preview img{
+	height: 15rem;
+	padding: 1rem;
+}
+
+.body{
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background-color: #608BC1;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin: 0 0 10px;
+}
+
+.card-description {
+  font-size: 1em;
+  color: #133E87;
+}
+
+.product-preview .preview .fa-times{
+	position: absolute;
+	top: 1rem; right: 1.5rem;
+	cursor: pointer;
+	font-size: 2rem;
+}
+
+.product-preview .preview .fa-times:hover{
+	transform: rotate(70deg);
+}
+
+.product-preview .preview h3{
+	font-size: 30px;
+	color: #133E87;
+}
+
+.product-preview .preview p{
+	line-height: 1;
+	padding: 1 rem 0;
+	font-size: 20px;
+	color: beige;
+}
+
+.card{
+	width: 225px;
+	height:350px;
+	background-color: darksalmon;
+	border: 10px solid darksalmon;
+	border-radius: 10px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover{
+	transform: translate(20px);
+	box-shadow: 0 10px 15px rgba(0, 0, 0, 0.8);
+}
+
+.card img{
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+.card-content{
+	padding: 5px;
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+.card-content h1{
+	font-size: 15px;
+	margin-bottom: 10px;
+	text-align: center;
+	color: hotpink;
+}
+.card-button{
+	display: inline-block;
+	background-color: peachpuff;
+	text-decoration: none;
+	border-radius: 5px;
+	padding: 7px 10px;
+	font-size: small;
+	align-items: center;
+	margin-top: 5px;
+}
+
+.card{
+	outline: 5px double salmon;
+	outline-style:;
+}
+
+.header-icon{
+	color: darksalmon;
+	font-size: 60px;
+	cursor: pointer;
+}
+
+.header-icon .bx{
+	color: var(--bg color);
+}
+
+.header-icon li{
+	list-style-type: none;
+}
+.header-icon li a{
+	color: salmon;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #608BC1;
+	font-family: garamond;
+}
+
+p{
+	font-family: garamond;
+	font-size: 22px;
+}
+
+nav{
+	background: #133E87;
+	height: 80px;
+	width: 100%;
+}
+
+label.logo{
+	color: #F3F3E0;
+	font-size: 35px;
+	line-height: 80px;
+	padding: 0 100px;
+	font-weight: bold;
+}
+
+nav ul{
+	float:right;
+	margin-right: 20px;
+}
+
+nav ul li{
+	display: inline-block;
+	line-height: 80px;
+	margin:0 5px;
+}
+
+nav ul li a{
+	color: #CBDCEB;
+	font-size: 18px;
+	padding: 5px 10px;
+	border-radius: 2px;
+	text-transform: uppercase;
+}
+nav ul li a:hover{
+	background-color: #608BC1;
+	border-radius: 5px;
+}
+
+a.active, a:hover{
+	background: #608BC1;
+	transition: .5s;
+}
+
+body {
+    font-family: garamond;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+content{
+	flex: 1;
+	padding: 20px;
+}
+footer{
+	position: absolute;
+	background-color: #133E87;
+	text-align: center;
+	padding: 10px 0;
+}
